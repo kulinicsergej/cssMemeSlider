@@ -13,6 +13,7 @@ body{
   align-items: center;
   background:rgb(93, 69, 122)
 }
+
 .slider{
   /* margin: 0 auto; */
   /* position: relative; */
@@ -30,6 +31,7 @@ overflow: hidden;
 
 }
 .xueta{
+  height: 60vh;
   width:400%;
   display: flex;
   margin-bottom: 5%;
