@@ -15,35 +15,28 @@ body{
 .slider{
   margin: 0 auto;
   position: relative;
-  width: 40%;
+  width: 50%;
   overflow: hidden;
 
 }
-.m1{
-  width: 100%;
-  height: 100%;
-}
- .m2{
-  width: 100%;
-  height: 100%;
-}
 
-.m3{
-  width: 100%;
-  height: 100%;
-}
-
-.m4{
-  width: 100%;
-  height: 100%;
-}
 .images{
+
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 100%;
+}
+.xueta{
+  width:400%;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 3%;
+  transition: all 0.8s ease;
 }
 .images img{
   height: 42em;
-  width: 100%;
+  width: 59.65em;
   transition: all 0.15s ease ;
 }
 .images input{
@@ -55,35 +48,88 @@ body{
   /* margin: 0.5em; */
 }
 .dots label{
+  /* padding: 1em; */
   height: 1.5em;
   width: 1.5em;
 border-radius: 50%;
 cursor: pointer;
-border: 0.2em solid #fff;
-transition:  all 0.15s ease;
+border: 0.4em solid #fff;
+transition:  all 0.11s ease;
 margin: 0.5em;
 }
+/* .li .m1{
+  width: 20em;
+} */
 .dots label:hover{ background: #fff;}
-#img1:checked ~ .m1{
+#img1:checked ~ .xueta{
   margin-left: 0;
 }
-#img2:checked ~ .m2{
-  margin-left: -100%;
-  width: 100%;
+#img2:checked ~ .xueta{
+  margin-left: -101%;
 }
-#img3:checked ~ .m3{
+#img3:checked ~ .xueta{
+  margin-left: -201%;
+}
+#img4:checked ~ .xueta{
+  margin-left: -300%;
+}  
+/* ________________________________________________ */
+#img1:checked ~ .footer .slider_text li{
+  margin-left: 0;
+}
+#img2:checked ~ .footer .slider_text li{
+  
+  margin-left: -100%;
+}
+#img3:checked ~ .footer .slider_text li{
   margin-left: -200%;
 }
-#img4:checked ~ .m4{
+#img4:checked ~ .footer .slider_text li{
   margin-left: -300%;
+}
+#img1:checked ~ div label[for="img1"]{
+  background: #fff;
+}
+#img2:checked ~ div label[for="img2"]{
+  background: #fff;
+}
+#img3:checked ~ div label[for="img3"]{
+  background: #fff;
+}
+#img4:checked ~ div label[for="img4"]{
+  background: #fff;
 }
 .footer{
   display: flex;
   justify-content: space-between;
 }
-.title{
-  color: azure;
+
+/* _________________________________________ */
+.slider_text{
+  /* border: 1px solid red; */
+  /* display: flex; */
+  width: 29%;
+  overflow: hidden;
+
 }
+li{
 
-
-
+  /* width: 100%; */
+  text-decoration: none;
+list-style-type: none;
+}
+p{
+width: 100%;
+  color: #fff;
+}
+/* .slider_text{
+  width: 400%;
+  display: flex;
+  overflow: hidden;
+} */
+.slider_text li{
+  width: 400%;
+  display: flex;
+  transition: all 0.60s ease;
+  /* justify-content: space-between; */
+}
