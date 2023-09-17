@@ -6,43 +6,50 @@
 }
 
 body{
-  height: 140vh;
+  margin: 0 auto;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background:rgb(25,12,41)
 }
 .slider{
-  margin: 0 auto;
-  position: relative;
+  /* margin: 0 auto; */
+  /* position: relative; */
   width: 50%;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 
 .images{
-
+overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
+
 }
 .xueta{
   width:400%;
   display: flex;
-  overflow: hidden;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
   transition: all 0.8s ease;
+ 
+}
+.xueta li{
+  width: 100%;
+
 }
 .images img{
-  height: 42em;
-  width: 59.65em;
+  height:100%;
+  width: 100%;
   transition: all 0.15s ease ;
 }
 .images input{
   display: none;
 }
 .dots{
+  /* border: 1px solid rgb(15, 38, 216); */
   display: flex;
   justify-content:flex-end;
   /* margin: 0.5em; */
@@ -56,6 +63,9 @@ cursor: pointer;
 border: 0.4em solid #fff;
 transition:  all 0.11s ease;
 margin: 0.5em;
+}
+.dots label:active{
+  transform: scale(0.6);
 }
 /* .li .m1{
   width: 20em;
@@ -102,13 +112,14 @@ margin: 0.5em;
 .footer{
   display: flex;
   justify-content: space-between;
+  /* border: 1px solid rgb(30, 255, 0); */
 }
 
 /* _________________________________________ */
 .slider_text{
   /* border: 1px solid red; */
   /* display: flex; */
-  width: 29%;
+  width: 60%;
   overflow: hidden;
 
 }
@@ -132,4 +143,16 @@ width: 100%;
   display: flex;
   transition: all 0.60s ease;
   /* justify-content: space-between; */
+}
+@media  (max-width:784px ){
+  .footer{
+    flex-direction: column-reverse;
+    align-items: center;
+gap: 5%;
+  }
+  .slider_text{
+    text-align: center;
+     align-self: start;
+     margin-top: 4%;
+  }
 }
