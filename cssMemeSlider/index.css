@@ -11,7 +11,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background:rgb(93, 69, 122)
+  background:rgb(67, 68, 122)
 }
 
 .slider{
@@ -61,10 +61,12 @@ overflow: hidden;
   height: 1.5em;
   width: 1.5em;
 border-radius: 50%;
+
 cursor: pointer;
 border: 0.4em solid #fff;
 transition:  all 0.11s ease;
 margin: 0.5em;
+
 }
 .dots label:active{
   transform: scale(0.6);
@@ -72,7 +74,7 @@ margin: 0.5em;
 /* .li .m1{
   width: 20em;
 } */
-.dots label:hover{ background: #fff;}
+.dots label:hover{ background:white;}
 #img1:checked ~ .xueta{
   margin-left: 0;
 }
@@ -164,5 +166,19 @@ gap: 5%;
     text-align: center;
      align-self: start;
      margin-top: 4%;
+  }
+}
+@media  (max-width:356px ){
+  .xueta{
+    height:17vh;
+    width:400%;
+    display: flex;
+    margin-bottom: 5%;
+    transition: all 0.8s ease;
+   
+  }
+  .slider_text{
+    width: 74%;
+    overflow: hidden;
   }
 }
