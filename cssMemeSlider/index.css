@@ -31,7 +31,7 @@ overflow: hidden;
 
 }
 .xueta{
-  height: 60vh;
+  height: 52vh;
   width:400%;
   display: flex;
   margin-bottom: 5%;
@@ -147,6 +147,14 @@ width: 100%;
   /* justify-content: space-between; */
 }
 @media  (max-width:784px ){
+  .xueta{
+    height:27vh;
+    width:400%;
+    display: flex;
+    margin-bottom: 5%;
+    transition: all 0.8s ease;
+   
+  }
   .footer{
     flex-direction: column-reverse;
     align-items: center;
